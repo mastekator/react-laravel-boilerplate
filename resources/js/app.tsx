@@ -9,12 +9,12 @@ import {Provider} from 'react-redux'
 import thunk, {ThunkMiddleware} from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import {createBrowserHistory} from 'history'
+import {Sanctum} from 'react-with-sanctum'
 
 // App
 import Index from './index'
 import rootReducer from './store/reducers/rootReducer'
 import Responsive from './context/ResponsiveContext/Responsive'
-import {Sanctum} from './context/Sanctum'
 
 const middleware = thunk as ThunkMiddleware
 

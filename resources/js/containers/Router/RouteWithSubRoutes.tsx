@@ -4,6 +4,7 @@ import React, {Suspense, useContext, useEffect} from 'react'
 // Third-party
 import {ErrorBoundary} from 'react-error-boundary'
 import {Redirect, Route, useHistory} from 'react-router-dom'
+import {SanctumContext} from 'react-with-sanctum'
 
 // Typescript
 import {IRoute} from '../../routes/IRoute'
@@ -11,7 +12,6 @@ import {IRoute} from '../../routes/IRoute'
 // App
 import Error from '../../components/UI/Error'
 import Layout from '../../layouts'
-import {SanctumContext} from '../../context/Sanctum'
 
 const RouteWithSubRoutes: React.FC<IRoute> = (route) => {
     // Authenticated flag

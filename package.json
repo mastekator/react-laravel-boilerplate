@@ -12,6 +12,11 @@
     "css-production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --env.mixfile=webpack.css.js --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastekator/react-laravel-boilerplate.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.10.4",
@@ -67,6 +72,7 @@
     "react-responsive": "^8.1.0",
     "react-router-dom": "^5.2.0",
     "react-toastify": "^6.2.0",
+    "react-with-sanctum": "^1.0.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
